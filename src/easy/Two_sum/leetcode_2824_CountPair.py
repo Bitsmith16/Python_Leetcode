@@ -6,8 +6,11 @@ where 0 <= i < j < n and nums[i] + nums[j] < target.
  
 
 Example 1:
-Input: nums = [-1,1,2,3,1], target = 2
-Output: 3
+Input  : 
+    nums    = [-1,1,2,3,1] 
+    target  = 2
+
+Output : 3
 
 Explanation: There are 3 pairs of indices that satisfy the conditions in the statement:
 - (0, 1) since 0 < 1 and nums[0] + nums[1] = 0 < target
@@ -16,8 +19,11 @@ Explanation: There are 3 pairs of indices that satisfy the conditions in the sta
 Note that (0, 3) is not counted since nums[0] + nums[3] is not strictly less than the target.
 
 Example 2:
-Input: nums = [-6,2,5,-2,-7,-1,3], target = -2
-Output: 10
+Input  : 
+    nums   = [-6,2,5,-2,-7,-1,3]
+    target = -2
+
+Output : 10
 
 Explanation: There are 10 pairs of indices that satisfy the conditions in the statement:
 - (0, 1) since 0 < 1 and nums[0] + nums[1] = -4 < target
@@ -32,7 +38,10 @@ Explanation: There are 10 pairs of indices that satisfy the conditions in the st
 - (4, 6) since 4 < 6 and nums[4] + nums[6] = -4 < target
 
 Eample 3:
-Input: nums = [0 2 4 -1 6 3 7 ] , target = 5
+Input: 
+    nums   = [0 2 4 -1 6 3 7 ] 
+    target = 5
+    
 output =7
 
 explanation - Possible pair - 
