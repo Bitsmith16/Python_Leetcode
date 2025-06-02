@@ -20,6 +20,7 @@ Example 3:
 Input       : nums = [-10,8,6,7,-2,-3]
 Output      : -1
 Explanation : There is no a single valid k, we return -1.
+
 '''
 def findMaxk(nums):
     nums.sort()
@@ -39,6 +40,3 @@ if __name__=='__main__':
     result = findMaxk(num)
     print(f"Result is {result}")
 
-    
-
-    
