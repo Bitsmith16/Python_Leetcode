@@ -45,7 +45,7 @@ def distinctAverages(nums):
     print(nums)
     while(left<right):
         avg = (nums[left] + nums[right]) / 2
-        resultset.append(avg)
+        resultset.add(avg)
         left +=1
         right -=1
     return len(resultset)
@@ -60,3 +60,7 @@ if __name__=='__main__':
     print(f"result is {result}")
 
 ## Please note , in this not considered the edge case like if there is no input or passing odd length input
+## Here we created set as it keep unique element, we are sorting the list so that extreme left will have min number 
+## and extreme right have max number, we are taking the avg and stroing in set and then moving left to next position(to its right) 
+## and similary moving right to its next position(to its left). Pick the 2nd element and repeat the process.
+

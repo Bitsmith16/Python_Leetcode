@@ -34,7 +34,7 @@ def twoSum(nums, target):
     # Write your code here 
     final_ele = {}                         # creating a dictionary where we will have element
     for index in range(len(nums)):              
-        second_num = target - nums[index]       # 2nd number is target minus firt number
+        second_num = target - nums[index]       # 2nd number is target minus first number
         if second_num in final_ele:                  # if 2nd number exist in Final_ele dictionary then returning current number index and 2nd number index
             return [index,final_ele[second_num]]
         final_ele[nums[index]] = index          # entering number in dictionary having key as number and value is its index
@@ -65,4 +65,8 @@ def twosum(nums,target):
         seen[num] = index
     return [-1,-1]    
 
+'''
 
+# Solution Explanation - 
+## Target minus current number will give us 2nd number. If this 2nd number exist in dictionary 
+## then we will return its index & index of current number else entering number with its index as value in dictionary.
