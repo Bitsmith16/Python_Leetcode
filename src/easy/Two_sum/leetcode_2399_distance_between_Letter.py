@@ -47,7 +47,7 @@ def checkDistances(str1, distance):
             if actual != expected:
                 return False
             else:
-                first_occurence[char] = i
+                first_occurence[char] = index
     return True
 
 
